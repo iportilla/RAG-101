@@ -26,7 +26,7 @@ sequenceDiagram
 
 ## Setup & Running
 
-1. Ensure your `.env` file is present in the `tools-app` folder. It must contain:
+1. Ensure your `.env` file is present in the `tools` folder. It must contain:
    - `AZURE_OPENAI_ENDPOINT`
    - `API_KEY`
    - `MODEL_DEPLOYMENT`
