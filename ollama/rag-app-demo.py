@@ -24,7 +24,7 @@ def main():
     # Setup OpenAI Client
     # Fallback to empty key if not in .env, so the demo can run with local LLMs 
     # without needing a valid OpenAI key.
-    openai_key = os.getenv("OPEN_AI_KEY", "your-openai-api-key")
+    openai_key = os.getenv("OPENAI_API_KEY", "your-openai-api-key")
     openai_client = OpenAI(api_key=openai_key)
     
     # Setup Ollama Client (uses local OpenAI-compatible endpoint)
