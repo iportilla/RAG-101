@@ -77,12 +77,12 @@ with st.sidebar:
     st.divider()
 
     # ── OpenAI API Key (pre-filled from .env) ─────────────────────────────────
-    env_key = os.getenv("OPEN_AI_KEY", "")
+    env_key = os.getenv("OPENAI_API_KEY", "")
     openai_key = st.text_input(
         "OpenAI API Key",
         value=env_key,
         type="password",
-        help="Loaded from ollama/.env (OPEN_AI_KEY). Required only when using OpenAI.",
+        help="Loaded from ollama/.env (OPENAI_API_KEY). Required only when using OpenAI.",
     )
     if not use_ollama_embeddings or not use_ollama_chat:
         if not openai_key:
